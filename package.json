@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix ui-frontend",
     "dev:server": "npm run dev --prefix server",
-    "dev:client": "npm run dev --prefix client",
+    "dev:client": "npm run dev --prefix ui-frontend",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "npm run build --prefix client",
+    "build": "npm run build --prefix ui-frontend",
     "start": "npm run start --prefix server"
   },
   "devDependencies": {
